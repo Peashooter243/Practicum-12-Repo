@@ -12,10 +12,27 @@
 // "User entered no"
 //
 // (TO COMPLETE)
-public class Main {
+public class main {
     public static void main(String[] args) {
+      //Declare input variable
+      String sInput;
 
-      System.out.println("Hello World!");
+      //Scanner created (assuming only a type of "yes" or "no" will be inputed)
+      java.util.Scanner UserInput = new java.util.Scanner(System.in);
+      System.out.print("Yes or no?: ");
+      sInput = UserInput.nextLine();
+
+      //Makes input uppercase
+      sInput = sInput.toUpperCase();
+
+      if(sInput.equals("YES"))
+      {
+        System.out.println("User entered yes");
+      }
+      else
+      {
+        System.out.println("User entered no");
+      }
 
 
     }
